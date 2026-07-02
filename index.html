@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f5f5f5;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: white;
+            padding: 3rem 2rem;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            color: #666;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .gallery {
+            max-width: 1200px;
+            margin: 3rem auto;
+            padding: 0 1rem;
+
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+        }
+
+        .art-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease;
+        }
+
+        .art-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .art-card img {
+            width: 100%;
+            display: block;
+            object-fit: cover;
+        }
+
+        .art-info {
+            padding: 1.25rem;
+        }
+
+        .art-info h2 {
+            margin-bottom: 0.5rem;
+            font-size: 1.3rem;
+        }
+
+        .art-info p {
+            color: #555;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #777;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Izma Hashmi</h1>
+        <p>
+            Welcome to my art portfolio. Here you'll find a collection
+            of my illustrations and character designs.
+        </p>
+    </header>
+
+    <main class="gallery">
+
+        <article class="art-card">
+            <img src="img/Artwork1.png" alt="Artwork 1">
+
+            <div class="art-info">
+                <p>
+                    Recreating Architecture. It was an exercise in showing detail without actually drawing every little thing in the reference, and controlling the flow of my pen.
+                </p>
+            </div>
+        </article>
+
+        <article class="art-card">
+            <img src="img/Artwork2.png" alt="Artwork 2">
+
+            <div class="art-info">
+                <p>
+                    Observational drawing to develop an understanding of form, light, and value.
+                </p>
+            </div>
+        </article>
+
+        <article class="art-card">
+            <img src="img/Artwork3.png" alt="Artwork 3">
+
+            <div class="art-info">
+                <p>
+                    Graphite portrait to better my understanding of the anatomy of the head and light. 
+                </p>
+            </div>
+        </article>
+
+        <article class="art-card">
+            <img src="img/Artwork4.png" alt="Artwork 3">
+
+            <div class="art-info">
+                <p>
+                    A pair of boots, drawn to help me gauge perspective and form, especially foreshortening. 
+                </p>
+            </div>
+        </article>
+
+        <article class="art-card">
+            <img src="img/Artwork5.png" alt="Artwork 3">
+
+            <div class="art-info">
+                <p>
+                    A skeleton head. An exercise in lines and form.  
+                </p>
+            </div>
+        </article>
+
+        <article class="art-card">
+            <img src="img/Artwork6.png" alt="Artwork 3">
+
+            <div class="art-info">
+                <p>
+                    A broken car, to learn detail and perspective. 
+                </p>
+            </div>
+        </article>
+
+        <article class="art-card">
+            <img src="img/Artwork7.png" alt="Artwork 3">
+
+            <div class="art-info">
+                <p>
+                    Man on a couch. A demonstration of my anatomy and drapery skills. 
+                </p>
+            </div>
+        </article>
+
+        <article class="art-card">
+            <img src="img/Artwork8.png" alt="Artwork 3">
+
+            <div class="art-info">
+                <p>
+                    A design of an original character, as well as a two-value study.
+                </p>
+            </div>
+        </article>
+
+        <article class="art-card">
+            <img src="img/Artwork9.png" alt="Artwork 3">
+
+            <div class="art-info">
+                <p>
+                    Another design of an original character, stylized and minimalist. 
+                </p>
+            </div>
+        </article>
+
+        <article class="art-card">
+            <img src="img/Artwork10.png" alt="Artwork 3">
+
+            <div class="art-info">
+                <p>
+                    Portrait drawing of a women in sunny lighting. An exercise in painting and color theory, quite different from my usual black and white preferences. 
+                </p>
+            </div>
+        </article>
+
+        <article class="art-card">
+            <img src="img/Artwork11.png" alt="Artwork 3">
+
+            <div class="art-info">
+                <p>
+                    Character design of a hunter. Demonstrates my anatomy and character designing skills. 
+                </p>
+            </div>
+        </article>
+
+        <article class="art-card">
+            <img src="img/Artwork12.png" alt="Artwork 3">
+
+            <div class="art-info">
+                <p>
+                    Character artwork, inspired by the film Possession (1981). An interesting exercise in anatomy and body language. 
+                </p>
+            </div>
+        </article>
+
+    </main>
+
+    <footer>
+        © 2026 Izma Hashmi • Portfolio
+    </footer>
+
+</body>
+</html>
